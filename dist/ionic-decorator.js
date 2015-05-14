@@ -40,6 +40,7 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     'radios-inline': base + 'radios-inline.html',
     radiobuttons: base + 'radio-buttons.html',
     help: base + 'help.html',
+    date: base + 'default.html',
     'default': base + 'default.html'
   }, [
     // function(form) {
@@ -78,3 +79,14 @@ angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(de
     }
   };
 });
+
+// .directive('formatDate',function (){
+//     return {
+//         require: 'ngModel',
+//         link: function(scope, elem, attr, modelCtrl) {
+//             modelCtrl.$formatters.push(function(modelValue){
+//                 return new Date(modelValue);
+//             });
+//         }
+//     };
+// });
