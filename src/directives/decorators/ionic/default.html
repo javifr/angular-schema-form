@@ -135,9 +135,24 @@
   </a>
  -->
 
-  <button class="button button-small"
-        ng-if="form.htmlClass == 'item-input-inset'"
-        ng-click="buttonClick($event,form)"
+
+  <button
+        ng-if="form.htmlClass == 'item-input-inset' && form.htmlClass == 'scanCustomer'"
+        class="button button-small"
+        scanCustomer
         > {{form.insetButtonBody}}</button>
+
+  <button
+        ng-if="form.htmlClass == 'item-input-inset' && form.htmlClass == 'scanVoucher'"
+        class="button button-small"
+        scanVoucher
+        > {{form.insetButtonBody}}</button>
+
+  <button
+        ng-if="form.htmlClass == 'item-input-inset' && form.htmlClass == 'scanActivity'"
+        class="button button-small"
+        scanActivity
+        > {{form.insetButtonBody}}</button>
+
 
 </label>
