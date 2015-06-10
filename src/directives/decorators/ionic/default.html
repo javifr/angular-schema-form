@@ -137,19 +137,19 @@
 
 
   <button
-        ng-if="form.htmlClass == 'item-input-inset' && form.htmlClass == 'scanCustomer'"
+        ng-if="form.htmlClass == 'item-input-inset' && form.insetButtonAction == 'scanCustomer'"
         class="button button-small"
         scanCustomer
         > {{form.insetButtonBody}}</button>
 
   <button
-        ng-if="form.htmlClass == 'item-input-inset' && form.htmlClass == 'scanVoucher'"
+        ng-if="form.htmlClass == 'item-input-inset' && form.insetButtonAction == 'scanVoucher'"
         class="button button-small"
         scanVoucher
         > {{form.insetButtonBody}}</button>
 
   <button
-        ng-if="form.htmlClass == 'item-input-inset' && form.htmlClass == 'scanActivity'"
+        ng-if="form.htmlClass == 'item-input-inset' && form.insetButtonAction == 'scanActivity'"
         class="button button-small"
         scanActivity
         > {{form.insetButtonBody}}</button>
