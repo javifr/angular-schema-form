@@ -3,61 +3,6 @@
 
   <span class="input-label" ng-if="form.htmlClass == 'item-stacked-label'">{{form.title}}</span>
 
-  <label class="item-input-wrapper" ng-if="form.htmlClass == 'item-input-inset'">
-
-<!--     <input
-      ng-if="form.format == 'date'"
-      ng-show="form.key"
-      type="date"
-      step="any"
-      sf-changed="form"
-      placeholder="{{form.placeholder}}"
-      class="{{form.fieldHtmlClass}}"
-      ng-model-options="form.ngModelOptions"
-      ng-model="$$value$$"
-      ng-disabled="form.readonly"
-      name="{{form.key.slice(-1)[0]}}"
-      format-date
-      > -->
-
-    <input
-     ng-if="form.format == 'date'"
-     ng-show="form.key"
-     type="date"
-     format-date
-     placeholder="{{form.placeholder}}"
-     class="{{form.fieldHtmlClass}}"
-     ng-model="$$value$$"
-     format="form.format" />
-
-     <input
-     ng-if="form.format == 'date'"
-     ng-show="form.key"
-     style="display: none;"
-     type="text"
-     schema-validate="form"
-     ng-model="$$value$$"
-     format="form.format" />
-
-
-
-    <input
-      ng-if="form.format != 'date'"
-      ng-show="form.key"
-      type="{{form.type}}"
-      step="any"
-      sf-changed="form"
-      placeholder="{{form.placeholder}}"
-      class="{{form.fieldHtmlClass}}"
-      ng-model-options="form.ngModelOptions"
-      ng-model="$$value$$"
-      ng-disabled="form.readonly"
-      schema-validate="form"
-      name="{{form.key.slice(-1)[0]}}"
-      >
-
-
-  </label>
 
   <span ng-if="form.htmlClass != 'item-input-inset' && form.format != 'date'">
 
@@ -126,38 +71,5 @@
        ng-show="(hasError() && errorMessage(schemaError())) || form.description"
        ng-bind-html="(hasError() && errorMessage(schemaError())) || form.description"></div>
 
-<!--   <a class="button button-small" ng-if="form.htmlClass == 'item-input-inset'" ng-click="{{form.insetButtonAction}}"  data-click="{{form.insetButtonAction}}">
-      {{form.insetButtonBody}}
-  </a>
- -->
-<!--   <a class="button button-small" ng-if="form.htmlClass == 'item-input-inset'" ng-click="buttonClick($event,form)" >
-      {{form.insetButtonBody}}
-  </a>
- -->
-
-
-  <a
-        class="button button-small"
-        scan-customer
-        > {{form.insetButtonBody}}</a>
-
-<!--   <a
-        ng-if="form.htmlClass == 'item-input-inset' && form.insetButtonAction == 'scanCustomer'"
-        class="button button-small"
-        scan-customer
-        > {{form.insetButtonBody}}</a>
-
-  <a
-        ng-if="form.htmlClass == 'item-input-inset' && form.insetButtonAction == 'scanVoucher'"
-        class="button button-small"
-        scan-voucher
-        > {{form.insetButtonBody}}</a>
-
-  <a
-        ng-if="form.htmlClass == 'item-input-inset' && form.insetButtonAction == 'scanActivity'"
-        class="button button-small"
-        scan-activity
-        > {{form.insetButtonBody}}</a>
- -->
 
 </label>
