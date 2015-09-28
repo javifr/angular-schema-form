@@ -31,7 +31,7 @@
               schema-validate="form"
               ng-options="item.value as item.name for item in form.titleMap"
               name="{{form.key.slice(-1)[0]}}">
-              <option value="" ng-if="!$$value$$"></option>
+              <option value=""></option>
       </select>
 
       <div class="help-block"
